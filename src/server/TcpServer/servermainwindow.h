@@ -26,20 +26,15 @@ private:
     QList<QTcpSocket*> tcpClient;
     QTcpSocket *currentClient;
 
-//private slots:
-//    void NewConnectionSlot();
-//    void disconnectedSlot();
-//    void ReadData();
-
-//    void on_btnConnect_clicked();
-//    void on_btnSend_clicked();
-//    void on_btnClear_clicked();
 
 private slots:
     void NewConnectionSlot();
     void disConnectedSlot();
     void ReadData();
 
+    void on_btnSend_clicked();
+    void on_btnClear_clicked();
+    void on_btnConnect_clicked();
 };
 
 #endif // SERVERMAINWINDOW_H
